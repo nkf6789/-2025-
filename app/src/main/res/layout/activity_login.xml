@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Logo或标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎登录"
+        android:textSize="32sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- 用户名输入框 -->
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入用户名"
+        android:background="@drawable/bg_edit_text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入密码"
+        android:background="@drawable/bg_edit_text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- 其他登录方式 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他登录方式"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 第三方登录图标 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_wechat"
+            android:layout_marginEnd="24dp"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/iv_apple"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_apple"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
